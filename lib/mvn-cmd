@@ -1,0 +1,5 @@
+mvn install:install-file -DgroupId=com.cloudera.impala -DartifactId=ImpalaJDBC41 -Dversion=2.5.30 -Dpackaging=jar -Dfile=ImpalaJDBC41-2.5.30.jar
+mvn install:install-file -DgroupId=com.cloudera.impala -DartifactId=hive_metastore -Dversion=2.5.30 -Dpackaging=jar -Dfile=hive_metastore-2.5.30.jar
+mvn install:install-file -DgroupId=com.cloudera.impala -DartifactId=hive_service -Dversion=2.5.30 -Dpackaging=jar -Dfile=hive_service-2.5.30.jar
+mvn install:install-file -DgroupId=com.cloudera.impala -DartifactId=ql -Dversion=2.5.30 -Dpackaging=jar -Dfile=ql-2.5.30.jar
+mvn install:install-file -DgroupId=com.cloudera.impala -DartifactId=TCLIServiceClient -Dversion=2.5.30 -Dpackaging=jar -Dfile=TCLIServiceClient-2.5.30.jar

@@ -1,0 +1,32 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: sql-hbase
+  datasource:
+    impala:
+      driver-class-name: com.cloudera.impala.jdbc41.Driver
+      jdbc-url: jdbc:impala://hadoop103:21050/zjh
+
+
+
+
+
+impala:
+  jdbc-url: jdbc:impala://hadoop105:21050
+  driver-class-name: com.cloudera.impala.jdbc41.Driver
+  type: com.alibaba.druid.pool.DruidDataSource
+  initialSize: 1
+  maxIdle: 3
+  maxActive: 20
+  maxWait: 50000
+  testOnBorrow: false
+  testOnReturn: false
+  validationQuery: select 1
+  testWhileIdle: true
+  timeBetweenEvictionRunsMillis: 60000
+  minEvictableIdleTimeMillis: 30000
+  numTestsPerEvictionRun: 100
+  pooPreparedStatements: true
+  maxPoolPreparedStatementPerConnectionSize: 20
+
